@@ -1,0 +1,103 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+table, tr, td, th
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+table
+{
+    table-layout: fixed;
+    width: 100%;
+}
+tbody table.subTable
+{
+    table-layout: fixed;
+    overflow-x: hidden;
+}
+tbody::-webkit-scrollbar
+{
+    display: none;
+}
+table#table
+{
+    background-color: #d3d3d3;
+}
+table#table tr.hit, #table tr th
+{
+    background-color: #FFFFFF;
+}
+table#table tr.hit:hover
+{
+    background-color: #e7e7e7;
+}
+table#table tr:hover
+{
+    background-color: #c0c0c0;
+}
+
+table#table tr.hit td.exactHit
+{
+    text-decoration: underline;
+}
+table#table thead, table#table tbody
+{
+	display: block;
+	position: relative;
+}
+table#table tbody
+{
+	max-height: 600px;
+	overflow-y: auto;
+}
+tr
+{
+    position: relative;
+}
+
+table#table thead th, table#table tbody td
+{
+    position: relative;
+}
+
+input#searchBar
+{
+    width: 80px;
+}
+input[type=checkbox][readonly]
+{
+    pointer-events: none;
+}
+
+span.wrench
+{
+    text-size-adjust: 50%;
+}
+
+button
+{
+    /*background-color: #EFEFEF;*/
+}
+button.buttonPressed
+{
+    /*border-style:inset;*/
+    background-color: #d4d4d4;
+}
+button.line
+{
+    text-decoration: line-through;
+}
+button.highlight
+{
+    background-color: #FFFFFF;
+}
+
+div.projName, div.projBool
+{
+    font-style: oblique;
+}
